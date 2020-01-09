@@ -2,7 +2,7 @@ function dist = getDistanceMat(coords,mode)
 %GETDISTANCE Summary of this function goes here
 %   Detailed explanation goes here
 str_coords = string(coords);
-key = "AIzaSyA09fBytuZD51zbFASykzp9YZagjfrxQxM";   % Enter the GoogleAPI key
+key = "";   % Enter your GoogleAPI key here
 url_dist = "https://maps.googleapis.com/maps/api/distancematrix/"; % outputFormat?parameters'
 outputFormat = "json?";
 param1 = "origins=";

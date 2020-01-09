@@ -5,7 +5,7 @@ url = "https://roads.googleapis.com/v1/snapToRoads?";
 param1 = "path=";
 param2 = "interpolate=false";
 param3 = "key=";
-key = "AIzaSyA09fBytuZD51zbFASykzp9YZagjfrxQxM";   % Enter the GoogleAPI key
+key = "";   % Enter your GoogleAPI key here
 
 
 sz = length(lat);

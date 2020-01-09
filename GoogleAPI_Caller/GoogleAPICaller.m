@@ -4,7 +4,7 @@
 % information for a vehicle drive test path.
 
 %% Use Authentication Information
-key = "AIzaSyA09fBytuZD51zbFASykzp9YZagjfrxQxM";   % Enter the GoogleAPI key
+key = "";   % Enter your GoogleAPI key here
 url_dist = "https://maps.googleapis.com/maps/api/distancematrix/"; % outputFormat?parameters'
 url_elev = "https://maps.googleapis.com/maps/api/elevation/";
 outputFormat = "json?";
