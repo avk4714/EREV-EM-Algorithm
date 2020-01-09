@@ -67,10 +67,25 @@ As we have evaluated two separate algorithms in our study, in order to simulate 
 
 
 ## How to: Get Average Speed Trace from Google Directions API
+This application was built using MATLAB scripts and Google APIs. Before this application can be used you would need to **generate your personal Google API key using Google Console**. Once you have your key add it to the functions/scripts in **Google API Caller** in the line:
+> key = "";
 
-## How to: Operate the Model with Re-Optimization
+.. then continue with the following steps:
+1. Open and run the MATLAB script *GenGoogleDriveTrace.m*.
+2. This will open a GUI as shown in the figure. The default "Origin" and "Destination" locations are already loaded but new ones can be added.
+3. Once the information is provided, Click *Ok* to proceed.
+4. In most cases all the data needed will be obtained and the *average speed* vector will be generated based on Live Traffic Information.
+
+
+**P.S.**: *In certain cases the function returns an error due to empty data variables during the API call. These issues can be fixed by the user if desired or try a different set of locations.*
+
+<img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/Route_Selector_App.png" width="300" height="400">
+
 
 ## External Open-Source Data Links
 Argonne National Laboratory (ANL) Dataset (Requires SignUp):
 * Energy Systems D3 2014 BMW i3-REX - [BMWi3Data](https://www.anl.gov/es/energy-systems-d3-2014-bmw-i3rex)
 * Energy Systems D3 2016 Chevrolet Volt - [ChevroletVoltData](https://www.anl.gov/es/energy-systems-d3-2016-chevrolet-volt)
+
+## Author Contact
+If there are any outstanding questions on how to use the model, please send an email to: *avkalia[at]uw[dot]edu* with the Subject line: **[EREV Algorithm - GitHub]:**
