@@ -36,7 +36,15 @@ Follow these steps to setup the model for simulations:
 ## How to: Run/Modify the Model
 The model has a few manual settings that change how the model performs. These can be changed prior to running the simulation for vaying the operation.
 
-1. 
+1. **Drive Trace Settings**
+<img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/Drive_Trace_Settings.png" width="500" height="400">
+
+2. **Battery EPO Block Removal**
+<img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/Battery_EPO_Block.png" width="500" height="400">
+
+3. **Choosing between Conventional and Proposed algorithm simulations**
+<img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/ReOpt_Settings.png" width="800" height="500">
+
 
 ## How to: Get Average Speed Trace from Google Directions API
 
