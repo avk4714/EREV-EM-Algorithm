@@ -2,7 +2,7 @@ function [lat,long,elev] = getElevation(coords,sample,type)
 %GETELEVATION Summary of this function goes here
 %   Detailed explanation goes here
 %% Use Inputs
-key = "AIzaSyA09fBytuZD51zbFASykzp9YZagjfrxQxM";   % Enter the GoogleAPI key
+key = "";   % Enter your GoogleAPI key here
 url_elev = "https://maps.googleapis.com/maps/api/elevation/";
 outputFormat = "json?";
 param1 = "origins=";
