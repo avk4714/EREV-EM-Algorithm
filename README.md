@@ -9,3 +9,5 @@ This repository serves as **Supplementary Data** for the Article titled *"On Imp
 ## How to: Get Average Speed Trace from Google Directions API
 
 ## How to: Operate the Model with Re-Optimization
+
+## External Open-Source Data Links
