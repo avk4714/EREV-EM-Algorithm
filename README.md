@@ -2,6 +2,8 @@
 This repository serves as **Supplementary Data** for the Article titled *"On Implementing Optimal Energy Management for EREV using Distance Constrained Adaptive Real-Time Dynamic Programming"* submitted to MDPI Journal Electronics in **January 2020**. 
 >The MATLAB/Simulink model, scripts and functions were made on *MATLAB 2018b*. It is suggested to use this version of MATLAB for easier setup.
 
+Current Release: [![DOI](https://zenodo.org/badge/232681953.svg)](https://zenodo.org/badge/latestdoi/232681953)
+
 ## Repository Contents
 1. **Custom Evaluation Scripts**
     * This directory contains various evaluation scripts developed during the study.
