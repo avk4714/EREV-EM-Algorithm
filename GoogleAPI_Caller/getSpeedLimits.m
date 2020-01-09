@@ -4,7 +4,7 @@ function spdLim = getSpeedLimits(pathVector)
 
 %% Function Body
 
-key = "AIzaSyA09fBytuZD51zbFASykzp9YZagjfrxQxM";   % Enter the GoogleAPI key
+key = "";   % Enter the GoogleAPI key
 url_dist = "https://roads.googleapis.com/v1/speedLimits?"; % outputFormat?parameters'
 param1 = "path=";
 param2 = "key=";
