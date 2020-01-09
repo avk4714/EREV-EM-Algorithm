@@ -9,7 +9,7 @@ function [legCoords, legDist, legDuration] = getDirections(origin,destination)
 
 %% Function Body
 
-key = "AIzaSyA09fBytuZD51zbFASykzp9YZagjfrxQxM";   % Enter the GoogleAPI key
+key = "";   % Enter your GoogleAPI key here
 url_dist = "https://maps.googleapis.com/maps/api/directions/"; % outputFormat?parameters'
 trafficModelType = "best_guess";
 depTime = "now";
