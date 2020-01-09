@@ -11,3 +11,6 @@ This repository serves as **Supplementary Data** for the Article titled *"On Imp
 ## How to: Operate the Model with Re-Optimization
 
 ## External Open-Source Data Links
+Argonne National Laboratory (ANL) Dataset (Requires SignUp):
+* Energy Systems D3 2014 BMW i3-REX - [BMWi3Data](https://www.anl.gov/es/energy-systems-d3-2014-bmw-i3rex)
+* Energy Systems D3 2016 Chevrolet Volt - [ChevroletVoltData](https://www.anl.gov/es/energy-systems-d3-2016-chevrolet-volt)
