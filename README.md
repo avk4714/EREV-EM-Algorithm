@@ -34,7 +34,9 @@ Follow these steps to setup the model for simulations:
 4. If the model opens without errors or major warnings, the setup is complete.
 
 ## How to: Run/Modify the Model
+The model has a few manual settings that change how the model performs. These can be changed prior to running the simulation for vaying the operation.
 
+1. 
 
 ## How to: Get Average Speed Trace from Google Directions API
 
