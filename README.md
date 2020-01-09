@@ -37,12 +37,32 @@ Follow these steps to setup the model for simulations:
 The model has a few manual settings that change how the model performs. These can be changed prior to running the simulation for vaying the operation.
 
 1. **Drive Trace Settings**
+The "manual switch" selectors allow to switch between drive trace source and road grade source. For this study as we assumed road grade to be *zero*, do select the Constant with the value *zero* as input for all simulations.
+
 <img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/Drive_Trace_Settings.png" width="500" height="400">
 
 2. **Battery EPO Block Removal**
+This particular block in the model is only to trigger an Emergency Power Off (EPO) signal when discharge current is beyond acceptable limits. As the data controlling this behavior is propreitary, it has not been shared on this repository. Hence, delete this block from the model. **There is no change in the behavior of the model without this block.**
+
 <img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/Battery_EPO_Block.png" width="500" height="400">
 
 3. **Choosing between Conventional and Proposed algorithm simulations**
+As we have evaluated two separate algorithms in our study, in order to simulate them, we need to manually comment out certain blocks and change certain constant values.
+   * *If simulating the Conventional algorithm*
+      * Comment out the "Proposed Algorithm" block as shown in figure below.
+      * Change the "Algroithm Switch" constant block value to 1.
+      * Have the "Fault Insert" block Inactive by "Unchecking" the option in the subsystem mask.
+      * If you run into a missing value error, comment that block out from the model too.
+   * *If simulating the Proposed algorithm*
+      * Run the *runOptSHEV_DP_FwdProp.m* script with the correct drive trace and Re-Optimization = 0 settings to generate the optimal solution before the drive. 
+      * Save "OptResults" structure generated in MATLAB Workspace under a new structure name "N_OptResults".
+      * Open the Simulink model and select the same drive trace and other parameters used for initial optimization.
+      * Uncomment the "Proposed Algorithm" block as shown in figure below.
+      * Change the "Algroithm Switch" constant block value to 2.
+      * In the *runOptSHEV_DP_FwdProp.m* script change Re-Optimization = 1, so that the script can be operated by the model.
+      * Have the "Fault Insert" block Inactive by "Unchecking" the option in the subsystem mask.
+      * Run the simulation. The simulation **pauses** everytime a re-optimization occurs. As the simulation cannot *automatically* unpause, we have to manually keep clicking the "Run" switch in Simulink until the simulation is done.
+   
 <img src = "https://github.com/avk4714/EREV-EM-Algorithm/blob/master/ReOpt_Settings.png" width="800" height="500">
 
 
